@@ -68,13 +68,12 @@ body {
 /* Full width page blocks */
 .outer {
     position: relative;
-    padding: 0 4vw;
+    /* padding: 0 4vw; */
 }
 
 /* Centered content container blocks */
 .inner {
     margin: 0 auto;
-    max-width: 1040px;
     width: 100%;
 }
 
@@ -95,12 +94,12 @@ body {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        margin-top: -70px;
+        margin-top: 70px;
         padding-top: 0;
     }
     .home-template .site-nav {
         position: relative;
-        top: -70px;
+        /* top: -70px; */
     }
 }
 
@@ -110,11 +109,12 @@ body {
 
 .site-header {
     position: relative;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    /* background: color(var(--red) l(-5%)) no-repeat center center; */
     background-size: cover;
+    margin-bottom: 90px;
 }
 
 .site-header:before {
@@ -152,10 +152,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10vw 4vw;
-    min-height: 200px;
-    max-height: 450px;
+    padding: 0vw 4vw;
+    /* min-height: 200px; */
+    /* max-height: 450px; */
     text-align: center;
+    color: black;
 }
 
 .site-title {
@@ -200,8 +201,10 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     overflow-y: hidden;
-    height: 40px;
+    height: 60px;
     font-size: 1.2rem;
+    background: color(var(--lightred)) no-repeat center center;
+    padding: 10px 0;
 }
 
 .site-nav-left {
@@ -210,7 +213,7 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    margin-right: 10px;
+    margin-left: 50px;
     padding-bottom: 80px;
     letter-spacing: 0.4px;
     white-space: nowrap;
@@ -231,7 +234,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin-right: 24px;
     padding: 11px 0;
-    color: #fff;
+    color: #000;
     font-size: 1.7rem;
     line-height: 1em;
     font-weight: bold;
@@ -280,6 +283,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     align-items: center;
     height: 40px;
+    margin-right: 50px;
+
 }
 
 .social-links {
@@ -362,11 +367,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-right: 0;
         padding-left: 0;
     }
-    .site-nav-left {
+    .site-nav-right {
         margin-right: 0;
         padding-left: 4vw;
     }
-    .site-nav-right {
+    .site-nav-right .nav {
+        margin: 0 0 0 12px;
+    }
+    .site-nav-left {
         display: none;
     }
 }
@@ -384,21 +392,20 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card {
-    flex: 1 1 300px;
+    flex: 1 1 40%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 20px 40px;
+    margin: 0 20px 150px;
     min-height: 300px;
-    background: #fff center center;
+    background: transparent center center;
     background-size: cover;
     border-radius: 5px;
-    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    /* box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px; */
     transition: all 0.5s ease;
 }
 
 .post-card:hover {
-    box-shadow: rgba(39,44,49,0.07) 8px 28px 50px, rgba(39, 44, 49, 0.04) 1px 6px 12px;
     transition: all 0.4s ease;
     transform: translate3D(0, -1px, 0) scale(1.02);
 }
@@ -407,7 +414,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 5px 5px 0 0;
+    margin: 0 10%;
+    /* border-radius: 5px 5px 0 0; */
 }
 
 .post-card-image {
@@ -447,8 +455,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-content {
     flex-grow: 1;
     display: flex;
+    margin: 10px 10%;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
 }
 
 .post-card-excerpt {
@@ -651,8 +661,11 @@ make sure this only happens on large viewports / desktop-ish devices.
     .post-feed {
         padding-top: 5vw;
     }
+    .post-card, .post-card-image-link, .post-card-content {
+        margin: 0 0 5vw;
+    }
     .post-card {
-        margin: 0 20px 5vw;
+        flex: auto
     }
 }
 
@@ -718,7 +731,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-image img {
     width: 100%;
-    height: 800px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -2233,7 +2246,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: color(var(--lightred));
 }
 
 .site-footer-content {
