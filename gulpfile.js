@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const {series, watch, src, dest, parallel} = require('gulp');
 const pump = require('pump');
 
@@ -15,10 +16,10 @@ const cssnano = require('cssnano');
 const customProperties = require('postcss-custom-properties');
 const easyimport = require('postcss-easy-import');
 
-function serve(done) {
-    livereload.listen();
-    done();
-}
+// function serve(done) {
+//     livereload.listen();
+//     done();
+// }
 
 const handleError = (done) => {
     return function (err) {
