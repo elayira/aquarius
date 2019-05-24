@@ -82,7 +82,7 @@ const cssWatcher = () => watch('assets/css/**', css);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs', '!node_modules/**/*.hbs'], hbs);
 const watcher = parallel(cssWatcher, hbsWatcher);
 const build = series(css, js);
-const dev = series(build, serve, watcher);
+const dev = series(build, watcher);
 
 exports.build = build;
 exports.zip = series(build, zipper);
