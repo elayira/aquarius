@@ -1,0 +1,370 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{> header background=@site.cover_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
+<div class="inner">
+    <div class="site-header-content">
+        <a class="site-nav-logo" href="{{@site.url}}">
+            <h1 class="site-title">
+                {{#if @site.logo}}
+                <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                {{else}}
+                {{@site.title}}
+                {{/if}}
+            </h1>
+            {{!-- <h2 class="site-description">{{@site.description}}</h2> --}}
+        </a>
+    </div>
+    {{> "site-nav"}}
+</div>
+</header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <section id="info">
+            <div class="container">
+                <div class="row align-content-center justify-content-center">
+                    <div class="col-sm-4 text-center">
+                        <img src="{{asset "spread-ideas-icon.png"}}"
+                            srcset="{{asset "spread-ideas-icon@2x.png 2x, spread-ideas-icon@3x.png"}} 3x"
+                            class="Spread-Ideas-Icon">
+                        <h2>Spread Your Ideas</h2>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img src="{{asset "impact-people-icon.png"}}"
+                            srcset="{{asset "impact-people-icon@2x.png 2x, impact-people-icon@3x.png"}} 3x"
+                            class="Impact-People-Icon">
+                        <h2>Impact More People</h2>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img src="{{asset "increase-revenues.png"}}"
+                            srcset="{{asset "increase-revenues@2x.png 2x, increase-revenues@3x.png"}} 3x"
+                            class="Increase-Revenues">
+                        <h2>Increase Revenues</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center padding_top_extra padding_bottom_extra">
+                    <div class="col-sm-auto">
+                        <a class="button_call " href="https://www.viraladmedia.com/discovery-call-schedule" target="_blank">
+                        Book A Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" style="background-color: #f16336;">
+            <div class="container how_we_work_c">
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto how_title">
+                        You Have A<div class="d-lg-none"></div> Marketing Problem If
+                    </div>
+                </div>
+                <div class="row justify-content-center padding_40px_top">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6 padding_left_right">
+                                <div class="row align-items-start">
+                                    <div class="col-2 align-items-start">
+                                        <img src="{{asset "bullet@3x.png"}}">
+                                    </div>
+                                    <div class="col-10 col-sm-8">
+                                        <p>Your website isn’t<br> increasing sales</p>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="{{asset "bullet@3x.png"}}">
+                                    </div>
+                                    <div class="col-8 col-sm-8">
+                                        <p>Advertising isn’t<br>
+                                            profitable</p>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="{{asset "bullet@3x.png"}}">
+                                    </div>
+                                    <div class="col-10 col-sm-9">
+                                        <p>You’re always seeking<br>
+                                            new methods</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="d-xs-none d-lg-none col divider">-->
+                            <!--<hr class="d-xs-none d-lg-none" />-->
+                            <!--</div>-->
+                            <div class="col-md-6 padding_left_right">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="{{asset "bullet@3x.png"}}">
+                                    </div>
+                                    <div class="col-10 col-sm-9">
+                                        <p>Mediocre businesses<br>
+                                            are beating you</p>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="{{asset "bullet@3x.png"}}">
+                                    </div>
+                                    <div class="col-8 col-sm-7">
+                                        <p>Your message is<br>
+                                            unclear</p>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="{{asset "bullet@3x.png"}}">
+                                    </div>
+                                    <div class="col-10 col-sm-8">
+                                        <p>
+                                            Customers aren’t<br>
+                                            paying attention</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center padding_top_extra padding_bottom_extra">
+                            <div class="col-sm-auto">
+                                <a class="button_call " href="https://www.viraladmedia.com/discovery-call-schedule" target="_blank">Book A Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container heading">
+                <div class="row">
+                    <div class="col">
+                        <h1>
+                            A Proven Roadmap<div class="d-lg-none"></div> Helps You Succeed
+                        </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-8 text-center">
+                        <img style="width: 100%" src="{{asset "road-map@3x.png"}}">
+                    </div>
+                </div>
+                <div class="row d-none d-lg-block">
+                    <div class="col-lg-2">
+                        <img style="width: 100%;position: absolute;top: -230px; padding-bottom: 10px;"
+                            src="{{asset "sucess-icon@2x.png"}}">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center padding_top_extra padding_bottom_extra">
+                    <div class="col-sm-auto">
+                        <a class="button_call " href="https://www.viraladmedia.com/discovery-call-schedule" target="_blank">Book A Consultation</a>
+                    </div>
+                </div>
+                <div class="row d-lg-none">
+                    <div class="col text-center">
+                        <img style="width: 30%; margin-bottom: -20px;" src="{{asset "success-illustration@2x.png"}}">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="get_results">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>How You Can Get <div class="d-lg-none"></div>Great Results</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <img src="{{asset "no-risk-icon@2x.png"}}" class="no-risk">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-start padding_40px_top">
+                    <div class="col-1 d-none d-lg-block">
+                        <img width="40px" src="{{asset "arrow-1@2x.png"}}">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2>1. No-Risk Consultation</h2>
+                        <p>
+                            Get a marketing roadmap that’s <br>proven to grow businesses.
+                        </p>
+                    </div>
+                    <div class="col-1 d-none d-lg-block">
+                        <img width="40px" src="{{asset "arrow-3@2x.png"}}">
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center padding_40px_top d-lg-none">
+                    <div class="col-md-4 text-center">
+                        <img src="{{asset "plan-icon.png"}}" srcset="{{asset "plan-icon@2x.png 2x,
+             plan-icon@3x.png 3x"}}" class="Plan-Icon">
+                        <h2>2. Execute the Plan</h2>
+                        <p>We’ll meet with you every week to<br> deliver your marketing collateral.
+                        </p>
+                    </div>
+                </div>
+                <div class="row padding_40px_top d-lg-none">
+                    <div class="col-md-4 text-center">
+                        <img src="{{asset "results-icon.png"}}" srcset="{{asset "results-icon@2x.png 2x,
+             results-icon@3x.png"}} 3x" class="Results-Icon">
+                        <h2>3. See Great Results</h2>
+                        <p>Ensure long-term growth with an<br> effective marketing strategy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center padding_40px_top d-none d-lg-flex">
+                    <div class="col-4">
+                        <img src="{{asset "plan-icon.png"}}" srcset="{{asset "plan-icon@2x.png 2x,
+             plan-icon@3x.png"}} 3x" class="Plan-Icon">
+                    </div>
+                    <div class="col-2  margin_10px">
+                        <img width="100%" src="{{asset "arrow-2@2x.png"}}">
+                    </div>
+                    <div class="col-4">
+                        <img src="{{asset "results-icon.png"}}" srcset="{{asset "results-icon@2x.png 2x,
+             results-icon@3x.png"}} 3x" class="Results-Icon">
+                    </div>
+                </div>
+                <div class="row padding_40px_top d-none d-lg-flex">
+                    <div class="col-6">
+                        <h2>2. Execute the Plan</h2>
+                        <p>We’ll meet with you every week to<br> deliver your marketing collateral.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <h2>3. See Great Results</h2>
+                        <p>Ensure long-term growth with an<br> effective marketing strategy.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center padding_top_extra ">
+                    <div class="col-sm-auto">
+                        <a class="button_call" href="https://www.viraladmedia.com/discovery-call-schedule" target="_blank">Book A Consultation</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="higher_padding">Our Managed Partners</h1>
+                    </div>
+                </div>
+                <div class="row align-items-center padding_bottom_extra">
+                    <div class="col text-center d-none d-lg-flex logos">
+                        <img src="{{asset "logos.png"}}" class="img-fluid">
+                    </div>
+                    <div class="col-sm-4 text-center d-xs-none d-lg-none">
+                        <img src="{{asset "youtube.png"}}" srcset="{{asset "youtube@2x.png 2x, youtube@3x.png"}} 3x"
+                            class="Youtube">
+                    </div>
+                    <div class="col-sm-4 text-center d-xs-none d-lg-none">
+                        <img src="{{asset "facebook.png"}}" srcset="{{asset "facebook@2x.png 2x, facebook@3x.png"}} 3x"
+                            class="Facebook">
+                    </div>
+                    <div class="col-sm-4 text-center d-xs-none d-lg-none">
+                        <img src="{{asset "infusionsoft.png"}}"
+                            srcset="{{asset "infusionsoft@2x.png 2x, infusionsoft@3x.png"}} 3x" class="Infusionsoft">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="success">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>
+                            Success Of Our Clients
+                        </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center padding_40px_top">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6 padding_left_right">
+                                <div class="row  padding_bottom_40px">
+                                    <div class="col success-box">
+                                        <div class="row justify-content-between align-items-center padding_40px_top">
+                                            <div class="col-5  text-left success-figure" id="fig1">6,100%</div>
+                                            <div class="col-4"><img width="60px" src="{{asset "roi-icon@2x.png"}}">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col success_desc">
+                                                <p class="padding_40px_top">
+                                                    ROI on recent campaign
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  padding_bottom_40px">
+                                    <div class="col success-box">
+                                        <div class="row justify-content-between align-items-center padding_40px_top">
+                                            <div class="col-5 text-left success-figure" id="fig3">565,000</div>
+                                            <div class="col-4"><img width="60px" src="{{asset "lead-icon@2x.png"}}">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col success_desc">
+                                                <p class="padding_40px_top">
+                                                    Number of leads
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding_left_right">
+                                <div class="row  padding_bottom_40px">
+                                    <div class="col success-box">
+                                        <div class="row justify-content-between align-items-center padding_40px_top">
+                                            <div class="col-5  text-left success-figure" id="fig2">$1,205,500</div>
+                                            <div class="col-4"><img width="60px" src="{{asset "webinar-icon@2x.png"}}">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col success_desc">
+                                                <p class="padding_40px_top">
+                                                    Single webinar revenue
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  padding_bottom_40px">
+                                    <div class="col success-box">
+                                        <div class="row justify-content-between align-items-center padding_40px_top">
+                                            <div class="col-5 text-left success-figure" id="fig4">$25,000,000</div>
+                                            <div class="col-4"><img width="60px" src="{{asset "campaign-icon@2x.png"}}">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col success_desc">
+                                                <p class="padding_40px_top">
+                                                    Single campaign revenue
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center padding_top_extra padding_bottom_extra">
+                    <div class="col-sm-auto">
+                        <a class="button_call " href="https://www.viraladmedia.com/discovery-call-schedule" target="_blank">Book A Consultation</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</main>
